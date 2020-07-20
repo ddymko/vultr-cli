@@ -60,6 +60,7 @@ func init() {
 	rootCmd.AddCommand(Iso())
 	rootCmd.AddCommand(Network())
 	rootCmd.AddCommand(osCmd)
+	rootCmd.AddCommand(ObjectStorageCmd())
 	rootCmd.AddCommand(Plans())
 	rootCmd.AddCommand(Regions())
 	rootCmd.AddCommand(ReservedIP())
@@ -106,5 +107,5 @@ func initClient() {
 	}
 
 	client = govultr.NewClient(nil, key)
-	client.RateLimit = 1 * time.Millisecond
+	client.SetRateLimit(1 * time.Second)
 }

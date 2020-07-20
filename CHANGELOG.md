@@ -1,6 +1,54 @@
 # Change Log
 
-## [v0.1.7](https://github.com/vultr/vultr-cli/compare/v0.1.7..v0.1.8) (2019-10-17)
+## [v0.3.2](https://github.com/vultr/vultr-cli/compare/v0.3.1..v0.3.2) (2020-06-04)
+### Dependencies
+* govultr 0.4.1 -> 0.4.2 [PR 98](https://github.com/vultr/vultr-cli/pull/98)
+
+## [v0.3.1](https://github.com/vultr/vultr-cli/compare/v0.3.0..v0.3.1) (2020-05-18)
+### Enhancement
+* spf13/viper 1.6.3 -> 1.7.0 [PR 94](https://github.com/vultr/vultr-cli/pull/94)
+* govultr 0.3.2 -> 0.4.1 [PR 95](https://github.com/vultr/vultr-cli/pull/95)
+
+
+## [v0.3.0](https://github.com/vultr/vultr-cli/compare/v0.2.1..v0.3.0) (2020-04-14)
+### Enhancement
+* OS no longer required for App/Iso/Snapshot during server create [PR 88](https://github.com/vultr/vultr-cli/pull/88)
+* Added in missing newline characters [PR 89](https://github.com/vultr/vultr-cli/pull/89)
+
+### Dependencies
+* spf13/viper 1.6.2 -> 1.6.3 [PR 87](https://github.com/vultr/vultr-cli/pull/87)
+* spf13/cobra 0.0.6 -> 0.0.7 [PR 85](https://github.com/vultr/vultr-cli/pull/85)
+
+## [v0.2.1](https://github.com/vultr/vultr-cli/compare/v0.2.0..v0.2.1) (2020-03-18)
+### Dependencies
+* govultr 0.3.0 -> 0.3.1 [PR 81](https://github.com/vultr/vultr-cli/pull/81)
+
+## [v0.2.0](https://github.com/vultr/vultr-cli/compare/v0.1.11..v0.2.0) (2020-03-11)
+### Enhancement
+* Object Storage support [PR 79](https://github.com/vultr/vultr-cli/pull/79) [74](https://github.com/vultr/vultr-cli/pull/74)
+
+### Bug Fix
+* Server Create description [PR 75](https://github.com/vultr/vultr-cli/pull/75)
+
+### Dependencies
+* spf13/viper 1.5.0 -> 1.6.2 [PR 76](https://github.com/vultr/vultr-cli/pull/76)
+* spf13/cobra 0.0.5 -> 0.0.6 [PR 78](https://github.com/vultr/vultr-cli/pull/78)
+* govultr 0.1.7 -> 0.3.0 [PR 77](https://github.com/vultr/vultr-cli/pull/77)
+
+## [v0.1.11](https://github.com/vultr/vultr-cli/compare/v0.1.10..v0.1.11) (2019-12-09)
+### Bug fix
+* Fix error message on network create [PR 65](https://github.com/vultr/vultr-cli/pull/65)
+
+## [v0.1.10](https://github.com/vultr/vultr-cli/compare/v0.1.9..v0.1.10) (2019-11-12)
+### Bug fix
+* GoVultr v0.1.7 version fix [PR 61](https://github.com/vultr/vultr-cli/pull/61)
+
+## [v0.1.9](https://github.com/vultr/vultr-cli/compare/v0.1.8..v0.1.9) (2019-11-11)
+### Enhancements
+* Updating dependency versions  [PR 59](https://github.com/vultr/vultr-cli/pull/59)
+* GoVultr v0.1.6 now supports retry [PR 59](https://github.com/vultr/vultr-cli/pull/59)
+
+## [v0.1.8](https://github.com/vultr/vultr-cli/compare/v0.1.7..v0.1.8) (2019-10-17)
 ### Bug fix
 * Fix for goreleaser to release homebrew tap  [PR 57](https://github.com/vultr/vultr-cli/pull/57)
 
