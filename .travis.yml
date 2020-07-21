@@ -8,6 +8,10 @@ jobs:
       dist: bionic
       go: 1.14.x
       services: docker
+      before_deploy:
+        - docker login -u="$DOCKER_USER" -p="$DOCKER_PASSWORD"
+      script: 
+        - make docker
 
     - name: "goreleaser"
       os: linux
