@@ -28,3 +28,7 @@ remove:
 
 format:
 	@go fmt ./...
+
+docker:
+	docker build . -t ddymko/vultr-cli
+	docker push ddymko/vultr-cli
