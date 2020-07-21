@@ -1,20 +1,6 @@
 # .travis.yml
 language: go
 
-go:
-  - 1.14.x
-
-env:
-  - GO111MODULE=on
-
-deploy:
-  - provider: script
-    cleanup: false
-    script: curl -sL https://git.io/goreleaser | bash
-    on:
-      tags: true
-      condition: $TRAVIS_OS_NAME = linux
-
 jobs:
   include:
     - name: "master"
@@ -22,18 +8,19 @@ jobs:
       dist: bionic
       go: 1.14.x
       services: docker
-      
+
     - name: "goreleaser"
-    - os: linux
+      os: linux
       dist: bionic
       go: 1.14.x
       services: docker
       env: GO111MODULE=on
       before_deploy:
-      - docker login -u="$DOCKER_USER" -p="$DOCKER_PASSWORD"
-    - provider: script
-      cleanup: false
-      script: curl -sL https://git.io/goreleaser | bash
-      on:
-        tags: true
-        condition: $TRAVIS_OS_NAME = linux
+        - docker login -u="$DOCKER_USER" -p="$DOCKER_PASSWORD"
+      deploy:
+      - provider: script
+        cleanup: false
+        script: curl -sL https://git.io/goreleaser | bash
+        on:
+          tags: true
+          condition: $TRAVIS_OS_NAME = linux
